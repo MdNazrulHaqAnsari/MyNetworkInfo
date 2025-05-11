@@ -5,7 +5,7 @@
 ## 🔗 Live Demo
 
 Check out the live demo here:  
-👉 [MyNetworkInfo Live](https://yourusername.github.io/mynetworkinfo/)
+👉 [MyNetworkInfo](https://mdnazrulhaqansari.github.io/MyNetworkInfo/)
 
 ## 🔧 Features
 
