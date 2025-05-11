@@ -2,6 +2,11 @@
 
 **MyNetworkInfo** is a lightweight web application that displays your network information using the `ipapi.co` API. It shows details like your public IP address, ISP, geographical location, and time zone in a clean, responsive UI.
 
+## 🔗 Live Demo
+
+Check out the live demo here:  
+👉 [MyNetworkInfo Live](https://yourusername.github.io/mynetworkinfo/)
+
 ## 🔧 Features
 
 - Detects your public IP address
