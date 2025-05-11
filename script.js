@@ -1,9 +1,7 @@
 function copyToClipboard(elementId) {
     const text = document.getElementById(elementId).textContent.trim();
     if (text && text !== 'Loading...') {
-      navigator.clipboard.writeText(text).then(() => {
-        alert(`${elementId} copied to clipboard!`);
-      }).catch((err) => {
+      navigator.clipboard.writeText(text).catch((err) => {
         console.error('Error copying text: ', err);
       });
     }
