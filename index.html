@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MyNetworkInfo - IP & ISP Info</title>
+    <meta
+      name="description"
+      content="Instantly find your IP address, ISP, geolocation, timezone, and more. 100% free, open-source IP info tool. Mobile-friendly and accurate."
+    />
+    <meta
+      name="keywords"
+      content="IP Address Lookup, Find My IP, What is My IP, ISP Finder, Geolocation Tool, IP Location, Public IP, IP Info, IP API, My IP Details, IP checker"
+    />
+    <meta name="author" content="Your Name or GitHub Handle" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      property="og:title"
+      content="MyNetworkInfo - Instant IP, ISP & Location Info"
+    />
+    <meta
+      property="og:description"
+      content="Free tool to find your IP address, ISP name, city, country, and more. Works instantly. No login required."
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://mdnazrulhaqansari.github.io/MyNetworkInfo/"
+    />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="MyNetworkInfo — Find Your IP Address & ISP"
+    />
+    <meta
+      name="twitter:description"
+      content="Fast and private IP geolocation tool. Check your IP, ISP, country, timezone, and more."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></noscript>
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "WebApplication",
+          "name": "MyNetworkInfo",
+          "url": "https://mdnazrulhaqansari/MyNetworkInfo/",
+          "description": "A free and open-source IP geolocation tool that shows your IP, ISP, country, and location data.",
+          "applicationCategory": "UtilitiesApplication",
+          "operatingSystem": "All",
+          "creator": {
+            "@type": "Person",
+            "name": "Mohammed Nazrul Haq Ansari"
+          }
+        }
+      </script>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <h1>🌐 MyNetworkInfo</h1>
+    <div class="card">
+      <div class="info">
+        <span class="label">IP Address:</span>
+        <div class="holder">
+          <span id="ip">Loading...</span
+          ><span
+            class="copy fa"
+            title="Copy on Clipboard"
+            onclick="copyToClipboard('ip')"
+            >&#xf0c5;</span
+          >
+        </div>
+      </div>
+      <div class="info">
+        <span class="label">IP Version:</span>
+        <div class="holder">
+          <span id="version">Loading...</span
+          ><span
+            class="copy fa"
+            title="Copy on Clipboard"
+            onclick="copyToClipboard('version')"
+            >&#xf0c5;</span
+          >
+        </div>
+      </div>
+      <div class="info">
+        <span class="label">ISP / Org:</span>
+        <div class="holder">
+          <span id="org">Loading...</span
+          ><span
+            class="copy fa"
+            title="Copy on Clipboard"
+            onclick="copyToClipboard('org')"
+            >&#xf0c5;</span
+          >
+        </div>
+      </div>
+      <div class="info">
+        <span class="label">ASN:</span>
+        <div class="holder">
+          <span id="asn">Loading...</span
+          ><span
+            class="copy fa"
+            title="Copy on Clipboard"
+            onclick="copyToClipboard('asn')"
+            >&#xf0c5;</span
+          >
+        </div>
+      </div>
+      <div class="info">
+        <span class="label">City:</span>
+        <div class="holder">
+          <span id="city">Loading...</span
+          ><span
+            class="copy fa"
+            title="Copy on Clipboard"
+            onclick="copyToClipboard('city')"
+            >&#xf0c5;</span
+          >
+        </div>
+      </div>
+      <div class="info">
+        <span class="label">Region:</span>
+        <div class="holder">
+          <span id="region">Loading...</span
+          ><span
+            class="copy fa"
+            title="Copy on Clipboard"
+            onclick="copyToClipboard('region')"
+            >&#xf0c5;</span
+          >
+        </div>
+      </div>
+      <div class="info">
+        <span class="label">Postal Code:</span>
+        <div class="holder">
+          <span id="postal">Loading...</span
+          ><span
+            class="copy fa"
+            title="Copy on Clipboard"
+            onclick="copyToClipboard('postal')"
+            >&#xf0c5;</span
+          >
+        </div>
+      </div>
+      <div class="info">
+        <span class="label">Country:</span>
+        <div class="holder">
+          <span id="country">Loading...</span
+          ><span
+            class="copy fa"
+            title="Copy on Clipboard"
+            onclick="copyToClipboard('country')"
+            >&#xf0c5;</span
+          >
+        </div>
+      </div>
+      <div class="info">
+        <span class="label">Latitude:</span>
+        <div class="holder">
+          <span id="latitude">Loading...</span
+          ><span
+            class="copy fa"
+            title="Copy on Clipboard"
+            onclick="copyToClipboard('latitude')"
+            >&#xf0c5;</span
+          >
+        </div>
+      </div>
+      <div class="info">
+        <span class="label">Longitude:</span>
+        <div class="holder">
+          <span id="longitude">Loading...</span
+          ><span
+            class="copy fa"
+            title="Copy on Clipboard"
+            onclick="copyToClipboard('longitude')"
+            >&#xf0c5;</span
+          >
+        </div>
+      </div>
+      <div class="info">
+        <span class="label">Time Zone:</span>
+        <div class="holder">
+          <span id="timezone">Loading...</span
+          ><span
+            class="copy fa"
+            title="Copy on Clipboard"
+            onclick="copyToClipboard('timezone')"
+            >&#xf0c5;</span
+          >
+        </div>
+      </div>
+      <div class="info">
+        <span class="label">UTC Offset:</span>
+        <div class="holder">
+          <span id="utc_offset">Loading...</span
+          ><span
+            class="copy fa"
+            title="Copy on Clipboard"
+            onclick="copyToClipboard('utc_offset')"
+            >&#xf0c5;</span
+          >
+        </div>
+      </div>
+      <div class="info">
+        <span class="label">Country Code:</span>
+        <div class="holder">
+          <span id="country_calling_code">Loading...</span
+          ><span
+            class="copy fa"
+            title="Copy on Clipboard"
+            onclick="copyToClipboard('country_calling_code')"
+            >&#xf0c5;</span
+          >
+        </div>
+      </div>
+      <div class="info">
+        <span class="label">Currency:</span>
+        <div class="holder">
+          <span id="currency">Loading...</span
+          ><span
+            class="copy fa"
+            title="Copy on Clipboard"
+            onclick="copyToClipboard('currency')"
+            >&#xf0c5;</span
+          >
+        </div>
+      </div>
+      <div class="info">
+        <span class="label">In EU:</span>
+        <div class="holder">
+          <span id="in_eu">Loading...</span
+          ><span
+            class="copy fa"
+            title="Copy on Clipboard"
+            onclick="copyToClipboard('in_eu')"
+            >&#xf0c5;</span
+          >
+        </div>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
